@@ -23,7 +23,7 @@ window {
     border-radius: 5px;
     border: none;
     color: @primary_blue;
-    background-color: @search_gray;
+    background-color: @primary_black;
 }
  
 #inner-box {
