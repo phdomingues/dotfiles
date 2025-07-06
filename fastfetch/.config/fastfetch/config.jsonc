@@ -1,0 +1,312 @@
+// {
+//     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+//     "modules": [
+//         "title",
+//         "separator",
+//         "os",
+//         "host",
+//         "bios",
+//         "board",
+//         "chassis",
+//         "kernel",
+//         "uptime",
+//         "processes",
+//         "packages",
+//         "shell",
+//         "display",
+//         "brightness",
+//         "monitor",
+//         "lm",
+//         "de",
+//         "wm",
+//         "wmtheme",
+//         "theme",
+//         "icons",
+//         "font",
+//         "cursor",
+//         "wallpaper",
+//         "terminal",
+//         "terminalfont",
+//         "terminalsize",
+//         "terminaltheme",
+//         "cpu",
+//         "cpuusage",
+//         "gpu",
+//         "memory",
+//         "swap",
+//         "disk",
+//         "battery",
+//         "poweradapter",
+//         "player",
+//         "media",
+//         "publicip",
+//         "localip",
+//         "wifi",
+//         "datetime",
+//         "locale",
+//         "vulkan",
+//         "opengl",
+//         "opencl",
+//         "users",
+//         "bluetooth",
+//         "sound",
+//         "gamepad",
+//         "weather",
+//         "netio",
+//         "diskio",
+//         "physicaldisk",
+//         "version",
+//         "break",
+//         "colors"
+//     ]
+// }
+
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    // ############
+    // ### LOGO ###
+    // ############
+    "logo": {
+        "source": "~/.config/fastfetch/ascii/arch_block.txt",
+        "padding": {
+            "top": 2,
+            "left": 2
+        },
+        "color": {
+            "1": "cyan",
+            "2": "cyan"
+        }
+    },
+    // ###############
+    // ### DISPLAY ###
+    // ###############
+    "display": {
+        "color": {
+            "title": "cyan"
+        },
+        "hideCursor": false,
+        "separator": " \uf061  "
+    },
+    // ###############
+    // ### MODULES ###
+    // ###############
+    "modules": [
+        {
+            "type": "title"
+        },
+        "separator",
+        // ### HARDWARE ###
+        {
+            "type": "custom",
+            "key": " ",
+            "format": "\u001b[1m\ueba3 HARDWARE\u001b[0m",
+            "outputColor": "blue"
+        },
+        {
+            "type": "chassis",
+            "keyColor": "blue",
+            "key": "  ├\uf109 CHASSIS    "
+        },
+        {
+            "type": "board",
+            "keyColor": "blue",
+            "key": "  ├\ueabe MOTHERBOARD"
+        },
+        {
+            "type": "cpu",
+            "keyColor": "blue",
+            "key": "  ├\uec19 CPU        "
+        },
+        {
+            "type": "cpuusage",
+            "keyColor": "blue",
+            "key": "  │╰\udb84\ude78 USAGE     "
+        },
+        {
+            "type": "gpu",
+            "keyColor": "blue",
+            "detectionMethod": "auto",
+            "key": "  ├\uf4bc GPU        "
+        },
+        {
+            "type": "display",
+            "keyColor": "blue",
+            "key": "  ├\udb80\udf79 DISPLAY    "
+        },
+        // ### HARDWARE - MEMORY ###
+        {
+            "type": "custom",
+            "key": " ",
+            "format": "  ╰\uefc5 \u001b[1mMEMORY\u001b[0m",
+            "outputColor": "blue"
+        },
+        {
+            "type": "disk",
+            "keyColor": "blue",
+            "key": "   ├\udb80\udeca DISK"
+        },
+        {
+            "type": "memory",
+            "keyColor": "blue",
+            "key": "   ├\uefc5 RAM "
+        },
+        {
+            "type": "swap",
+            "keyColor": "blue",
+            "key": "   ╰\uebcb SWAP"
+        },
+        "break",
+        // ### SYSTEM ###
+        {
+            "type": "custom",
+            "key": " ",
+            "format": "\u001b[1m\uf120 SYSTEM\u001b[0m",
+            "outputColor": "green"
+        },
+        {
+            "type": "users",
+            "keyColor": "green",
+            "key": "  ├\uf007 USER      "
+        },
+        {
+            "type": "datetime",
+            "keyColor": "green",
+            "key": "  ├\udb80\udcf0 DATETIME  "
+        },
+        {
+            "type": "locale",
+            "keyColor": "green",
+            "key": "  ├\udb81\uddca LOCALE    "
+        },
+        // ### SYSTEM - OS ###
+        {
+            "type": "os",
+            "key": "  ├\uf17c OS        ",
+            "keyColor": "green"
+        },
+        {
+            "type": "kernel",
+            "keyColor": "green",
+            "key": "  │├\udb80\udf3d KERNEL   "
+        },
+        {
+            "type": "Packages",
+            "keyColor": "green",
+            "key": "  │├\ueb29 PACKAGES "
+        },
+        {
+            "type": "processes",
+            "keyColor": "green",
+            "key": "  │╰\ueba2 PROCESSES"
+        },
+
+        // ### SYSTEM - TERMINAL ###
+        {
+            "type": "terminal",
+            "keyColor": "green",
+            "key": "  ├\uf489 TERMINAL  "
+        },
+        {
+            "type": "shell",
+            "keyColor": "green",
+            "key": "  │├\ue795 SHELL    "
+        },
+        {
+            "type": "TerminalFont",
+            "keyColor": "green",
+            "key": "  │├\uf031 FONT     "
+        },
+                {
+            "type": "terminaltheme",
+            "keyColor": "green",
+            "key": "  │╰\uee72 THEME    "
+        },
+        // ### SYSTEM - UI ###
+        {
+            "type": "custom",
+            "key": " ",
+            "format": "  ├\u001b[1m\udb83\ude51 UI\u001b[0m",
+            "outputColor": "green"
+        },
+        {
+            "type": "DE",
+            "keyColor": "green",
+            "key": "  │├\uf2d0 DE "
+        },
+        {
+            "type": "WM",
+            "keyColor": "green",
+            "key": "  │├\uf488 WM    "
+        },
+        {
+            "type": "WMTheme",
+            "keyColor": "green",
+            "key": "   │├\uee72 THEME "
+        },
+        {
+            "type": "lm",
+            "keyColor": "green",
+            "key": "  │├\udb80\udf42 LM    "
+        },
+        {
+            "type": "Theme",
+            "keyColor": "green",
+            "key": "  │├\uee72 THEME "
+        },
+        {
+            "type": "Icons",
+            "keyColor": "green",
+            "key": "  │├\uefa8 ICONS "
+        },
+        {
+            "type": "Font",
+            "keyColor": "green",
+            "key": "  │├\uf031 FONT  "
+        },
+        {
+            "type": "Cursor",
+            "keyColor": "green",
+            "key": "  │╰\udb80\uddbf CURSOR"
+        },
+        // ### SYSTEM - SOUND ###
+        {
+            "type": "sound",
+            "keyColor": "green",
+            "key": "  ├\uf028 SOUND      "
+        },
+        // ### SYSTEM - NETWORK ###
+        {
+            "type": "custom",
+            "key": " ",
+            "format": "  ╰\u001b[1m\uef09 NETWORK\u001b[0m",
+            "outputColor": "green"
+        },
+        {
+            "type": "localip",
+            "keyColor": "green",
+            "key": "   ├\udb86\udd82 IP(LOCAL) "
+        },
+        {
+            "type": "publicip",
+            "keyColor": "green",
+            "key": "   ├\udb86\udd82 IP(PUBLIC)"
+        },
+        {
+            "type": "wifi",
+            "keyColor": "green",
+            "key": "   ├\uf1eb WIFI      "
+        },
+        {
+            "type": "netio",
+            "keyColor": "green",
+            "key": "   ╰\uf1eb NET I/O   "
+        },
+        // ### COLORS ###
+        "break",
+        {
+            "type": "colors",
+            "paddingLeft": 5,
+            "symbol": "background"
+        }
+    ]
+}
