@@ -1,21 +1,8 @@
-# dotfiles
-My personal dotfiles for Arch
-
-
 # Installation
-## GTK-Theme
+<TODO>
 
-```
-yay -S adapta-gtk-theme
-```
+## Environment care
 
-## Qt5 theme
-```
-sudo pacman -S kvantum-qt5
-```
-
-## Install flameshot
-# as per 06-2025, flameshot does not work well with wayland, but flameshot-git set to use grim adapter works flawlessly
-```
-yay -S flameshot-git
-```
+- Update packages with `sudo pacman -Syu` and `yay`;
+- Remove packages with `sudo pacman -Rns`;
+- Clean pacman cache from time to time with `paccache -r`;
