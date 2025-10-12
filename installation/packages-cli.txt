@@ -1,0 +1,7 @@
+# === Terminal utilities / productivity tools ===
+eza                      # Modern replacement for 'ls' with colors and icons
+fzf                      # Fuzzy finder for files, history, and output
+starship                 # Cross-shell prompt for a minimal and fast terminal
+
+# === System info / monitoring tools ===
+fastfetch                # Modern Neofetch alternative for displaying system info

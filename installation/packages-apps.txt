@@ -1,0 +1,13 @@
+# === Desktop applications ===
+firefox                  # Web browser
+discord                  # Chat and voice app
+steam                    # Gaming platform
+
+# === File managers ===
+pcmanfm-gtk3             # Lightweight GTK3 file manager
+
+# === Accessories & extras ===
+ark                      # Archive manager for zip/tar files
+pavucontrol              # GUI sound control for PulseAudio/PipeWire
+piper                    # Mouse configuration tool for Logitech and others
+discover                 # KDE/Plasma software manager frontend

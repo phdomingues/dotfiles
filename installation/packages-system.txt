@@ -1,0 +1,24 @@
+# === Core system ===
+base                     # Essential Arch Linux base system
+linux-headers            # Kernel headers (needed for building kernel modules)
+grub                     # Bootloader
+intel-ucode              # Intel CPU microcode updates
+reflector                # Automatically update pacman mirror list
+
+# === Drivers & hardware ===
+nvidia                   # NVIDIA proprietary driver
+nvidia-container-toolkit  # NVIDIA runtime support for Docker containers
+wireless_tools           # Tools for wireless network configuration
+
+# === System utilities ===
+alsa-utils               # Audio utilities (amixer, alsamixer, etc.)
+power-profiles-daemon    # Power management daemon
+pacman-contrib           # Extra pacman utilities (paccache, checkupdates)
+unzip                    # Unzip utility
+wget                     # Command-line file downloader
+tree                     # Directory tree viewer
+dialog                   # Text-based dialog boxes
+htop                     # Process viewer (interactive top alternative)
+btop                     # Resource monitor with a modern UI
+qps                      # GUI process manager
+stow                     # Symlink manager (useful for dotfile management)

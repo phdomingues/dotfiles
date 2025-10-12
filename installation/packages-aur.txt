@@ -1,0 +1,27 @@
+# === Productivity & Notes ===
+joplin-appimage          # Note-taking app with markdown and sync support
+
+# === Desktop & UI tools ===
+flameshot-git            # Screenshot tool with annotation features
+flameshot-git-debug      # Debug symbols for Flameshot
+waypaper                 # Wallpaper manager for Wayland compositors
+wl-screenrec-debug       # Debug symbols for Wayland screen recorder
+
+# === Theming & Qt configuration ===
+qqc2-desktop-style5       # Qt Quick Controls 2 desktop styling (KDE look)
+qqc2-desktop-style5-debug # Debug symbols for the same
+qt6ct-kde                 # Qt6 Configuration Tool with KDE compatibility
+qt6ct-kde-debug           # Debug symbols for qt6ct-kde
+
+# === Media & Music ===
+spotify                   # Spotify desktop client
+spicetify-cli             # CLI tool to customize the Spotify client
+spicetify-cli-debug       # Debug symbols for Spicetify
+spicetify-marketplace-bin # Plugin and theme marketplace for Spicetify
+
+# === Utilities ===
+zramswap                 # ZRAM swap management service
+
+# === Package management ===
+yay                      # AUR helper for installing community packages
+yay-debug                # Debug symbols for yay

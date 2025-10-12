@@ -1,0 +1,21 @@
+# === Desktop environment / compositor ===
+hyprland                 # Wayland compositor for tiling window management
+hypridle                 # Idle management daemon for Hyprland
+hyprlock                 # Screen locker for Hyprland
+waybar                   # Status bar for Wayland compositors
+swaync                   # Notification daemon for Wayland
+wofi                     # Application launcher for Wayland
+hyprshot                 # Screenshot tool for Hyprland
+foot                     # Lightweight Wayland terminal emulator
+kitty                    # Feature-rich GPU-accelerated terminal emulator
+xorg-xinput              # X input device configuration utility (fallback support)
+
+# === Display manager ===
+sddm                     # Simple Desktop Display Manager (login screen)
+
+# === Theming & appearance ===
+adapta-gtk-theme         # GTK theme for a clean, modern look
+papirus-icon-theme       # Popular icon theme for Linux desktops
+nwg-look                 # GTK settings tool for Wayland environments
+qt5ct                    # Qt5 Configuration Tool for theme alignment
+woff2-font-awesome       # Font Awesome icons in WOFF2 format

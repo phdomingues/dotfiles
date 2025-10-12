@@ -1,0 +1,5 @@
+# === Coding / development tools ===
+code                     # Visual Studio Code IDE for programming
+cuda                     # NVIDIA CUDA toolkit for GPU programming
+docker                   # Container engine for isolating apps
+docker-compose           # Tool to define and manage multi-container Docker apps
