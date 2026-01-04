@@ -32,13 +32,13 @@ alias ls='eza'
 alias grep='grep --color=auto'
 
 # ENV VARIABLES
-export XDG_CONFIG_HOME=$HOME/.config
-export XDG_CONFIG_CACHE=$HOME/.cache
-export STARSHIP_CONFIG=~/.config/starship/starship.toml
-export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
-export PATH=/opt/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/opt/cuda/lib64
-export TORCH_CUDA_ARCH_LIST="8.6"
+# export XDG_CONFIG_HOME=$HOME/.config
+# export XDG_CONFIG_CACHE=$HOME/.cache
+# export STARSHIP_CONFIG=~/.config/starship/starship.toml
+# export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
+# export PATH=/opt/cuda/bin:$PATH
+# export LD_LIBRARY_PATH=/opt/cuda/lib64
+# export TORCH_CUDA_ARCH_LIST="8.6"
 
 # ZINIT
 # configuration
