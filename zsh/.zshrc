@@ -1,3 +1,5 @@
+ZSH_CONFIG_HOME=$HOME/.config/zsh
+
 # HISTORY
 HISTFILE=~/.zsh_history
 HISTSIZE=5000
@@ -28,8 +30,7 @@ unsetopt autocd beep extendedglob notify
 bindkey -v
 
 # ALIAS
-alias ls='eza'
-alias grep='grep --color=auto'
+source $ZSH_CONFIG_HOME/aliases.zsh
 
 # ENV VARIABLES
 # export XDG_CONFIG_HOME=$HOME/.config
